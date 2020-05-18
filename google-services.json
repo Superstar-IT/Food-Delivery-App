@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1091305868297",
+    "firebase_url": "https://flyte-13733.firebaseio.com",
+    "project_id": "flyte-13733",
+    "storage_bucket": "flyte-13733.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091305868297:android:3bf2de76ce6f23387c7cd8",
+        "android_client_info": {
+          "package_name": "com.flyte.flyteapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091305868297-fnn1jgrrpomqbhct29tnsa9edhejmu1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAas9Bi8WH1B7ReX7MjpU4OTO6SGtWzH1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091305868297-fnn1jgrrpomqbhct29tnsa9edhejmu1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Flyte",
+    "slug": "flyte_app",
+    "scheme": "flyte",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "icon": "./assets/Icon.png",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "2.14",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/images/Artboard.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#111111"
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 10000
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.flyte.flyteapp",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 6
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.flyte.flyteapp",
+      "buildNumber": "1.0.4",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "notification": {
+      "iosDisplayInForeground": false
+    },
+    "description": "",
+    "githubUrl": "https://github.com/martis900/CloudMates-Food"
+  }
+}

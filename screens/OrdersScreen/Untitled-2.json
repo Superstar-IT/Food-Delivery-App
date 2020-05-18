@@ -1,0 +1,182 @@
+{
+  "date2": "04/02/2020",
+  "date": 1585859400495,
+  "promo": {
+    "value": 0,
+    "code": ""
+  },
+  [
+    {
+      "id": 530,
+      "name": "Singature Burger Combo",
+      "description": "6oz Patty With Fries and Drink",
+      "price": 13.25,
+      "image": "https://s3.ca-central-1.amazonaws.com/flyte.live/Singature%20Burger%20Combo.jpeg",
+      "category": "Combos",
+      "restaurantID": 34,
+      "options": [
+        {
+          "type": "single",
+          "title": "Side",
+          "options": [
+            {
+              "text": "Fries",
+              "price": 0
+            },
+            {
+              "text": "Poutine",
+              "price": 3,
+              "selected": true
+            },
+            {
+              "text": "Onion Rings",
+              "price": 1
+            }
+          ]
+        },
+        {
+          "type": "single",
+          "title": "Drink",
+          "options": [
+            {
+              "text": "Coca-Cola",
+              "price": 0
+            },
+            {
+              "text": "Diet Coke",
+              "price": 0,
+              "selected": true
+            },
+            {
+              "text": "Sprite,Fanta",
+              "price": 0
+            },
+            {
+              "text": "Ice Tea",
+              "price": 0
+            },
+            {
+              "text": "Root Beer",
+              "price": 0
+            },
+            {
+              "text": "Water",
+              "price": 0
+            }
+          ]
+        }
+      ],
+      "special_price": null,
+      "available": 1,
+      "bubble": true,
+      "amount": 1
+    },
+    {
+      "id": 740,
+      "name": "20 McNuggets Combo",
+      "description": "With Fries and Drink",
+      "price": 15.89,
+      "image": "https://s3.ca-central-1.amazonaws.com/flyte.live/10%20McNuggets%20Combo.jpeg",
+      "category": "Combos",
+      "restaurantID": 1,
+      "selected_modifier_groups": [
+        {
+          "type": "single",
+          "title": "Select Side Item",
+          "selected_items": [
+            {
+              "text": "Med French Fries",
+              "price": 0
+            },
+            {
+              "text": "Lrg French Fries",
+              "price": 0.7,
+              "selected": true
+            },
+            {
+              "text": "Poutine",
+              "price": 1.8
+            },
+            {
+              "text": "Side Caesar Salad",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "type": "single",
+          "title": "Select Drink",
+          "options": [
+            {
+              "text": "Med Coca-Cola",
+              "price": 0,
+              "selected": true
+            },
+            {
+              "text": "Med Diet Coke",
+              "price": 0
+            },
+            {
+              "text": "Med Sprite",
+              "price": 0
+            },
+            {
+              "text": "Med NESTEA",
+              "price": 0
+            },
+            {
+              "text": "Med Root Beer",
+              "price": 0
+            },
+            {
+              "text": "Med Fruitopia Strawberry",
+              "price": 0
+            },
+            {
+              "text": "Med Fruitopia Organe",
+              "price": 0
+            },
+            {
+              "text": "Lrg Coca-Cola",
+              "price": 0.4
+            },
+            {
+              "text": "Lrg Diet Coke",
+              "price": 0.4
+            },
+            {
+              "text": "Lrg Sprite",
+              "price": 0.4
+            },
+            {
+              "text": "Lrg NESTEA",
+              "price": 0.4
+            },
+            {
+              "text": "Lrg Root Beer",
+              "price": 0.4
+            },
+            {
+              "text": "Lrg Fruitopia Strawberry",
+              "price": 0.4
+            },
+            {
+              "text": "Lrg Fruitopia Orange",
+              "price": 0.4
+            }
+          ]
+        }
+      ],
+      "special_price": null,
+      "available": 1,
+      "bubble": true,
+      "amount": 1
+    }
+  ],
+      "special_price": null,
+      "available": 1,
+      "bubble": true,
+      "amount": 1
+    }
+  ]
+}
