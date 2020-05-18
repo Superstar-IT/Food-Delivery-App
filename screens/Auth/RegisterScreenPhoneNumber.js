@@ -19,27 +19,28 @@ import Constants from "expo-constants";
 import api, { getSchools } from "../../api";
 import { useDispatch } from "react-redux";
 import { DismissKeyboard } from "./LoginScreenV2";
-import { validateEmail } from "./helpers";
 import { LinearGradient } from "expo-linear-gradient";
 import MaskedView from "@react-native-community/masked-view";
-const RegisterScreenEmail = ({ navigation, route }) => {
+const RegisterScreenPhoneNumber = ({ navigation, route }) => {
   const [entered, setEntered] = useState(route.params.entered);
   const [next, setNext] = useState(false);
-  const emailRef = useRef();
+  const [phone, setPhoneNum] = useState("");
+  const phoneRef = useRef();
 
   useEffect(() => {
-    emailRef.current?.focus();
+    phoneRef?.current?.focus();
   }, []);
 
   useEffect(() => {
-    const { password } = entered;
-    if (!!password) {
-      setNext(true);
-    } else setNext(false);
+    setNext(true);
   }, [entered]);
 
-  const [focused, setFocused] = useState({ password: true });
+  const [focused, setFocused] = useState({ phone: true });
 
+  function handlePhone(phone) {
+    setEntered({ ...entered, phone });
+    setPhoneNum(phone);
+  }
   return (
     <View style={{ flex: 1, backgroundColor: "white" }}>
       <StatusBar barStyle="dark-content" />
@@ -71,7 +72,7 @@ const RegisterScreenEmail = ({ navigation, route }) => {
                       fontWeight: "bold"
                     }}
                   >
-                    Enter your password
+                    Enter your phone number
                   </Text>
                 </View>
               }
@@ -94,19 +95,19 @@ const RegisterScreenEmail = ({ navigation, route }) => {
           >
             <View style={{ flex: 1 }} />
             <TextInput
-              ref={emailRef}
-              onBlur={() => setFocused({ password: false })}
-              onFocus={() => setFocused({ password: true })}
-              onChangeText={password => setEntered({ ...entered, password })}
+              ref={phoneRef}
+              onBlur={() => setFocused({ phone: false })}
+              onFocus={() => setFocused({ phone: true })}
+              onChangeText={phone => handlePhone(phone)}
               autoCapitalize={"none"}
+              keyboardType={"phone-pad"}
               autoCorrect={false}
               autoCompleteType={"off"}
-              placeholder="Password"
-              secureTextEntry={true}
+              placeholder="phone"
               style={{
                 backgroundColor: "white",
                 height: 44,
-                borderBottomColor: focused.password
+                borderBottomColor: focused.phone
                   ? "#4F3FEB"
                   : "rgba(0,0,0,.06)",
                 width: "100%",
@@ -120,8 +121,8 @@ const RegisterScreenEmail = ({ navigation, route }) => {
             <View style={{ flex: 1 }} />
             <TouchableOpacity
               onPress={() => {
-                if (next) navigation.navigate("Register3", { entered });
-                else Alert.alert("Enter your password");
+                if (phone) navigation.navigate("RegisterAddress", { entered });
+                else Alert.alert("Enter valid phone address");
               }}
             >
               <LinearGradient
@@ -148,4 +149,4 @@ const RegisterScreenEmail = ({ navigation, route }) => {
   );
 };
 
-export default RegisterScreenEmail;
+export default RegisterScreenPhoneNumber;
